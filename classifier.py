@@ -10,7 +10,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 
-df = pd.read_csv('https://github.com/clairett/pytorch-sentiment-classification/raw/master/data/SST2/train.tsv',
-                 delimiter='\t', header=None)
+df = pd.read_csv('https://raw.githubusercontent.com/vebits/bert-ml-workshop/master/movie_reviews.csv',
+                 delimiter=',', header=None)
 
-batch_1 = df[:2000]
+df[1].value_counts()
